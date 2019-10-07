@@ -24,6 +24,30 @@ class _HomeState extends State<Home> {
             onPressed: () {},)
         ],
       ),
+
+      backgroundColor: Colors.white,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Icon(Icons.person_pin, size: 120.0, color: Colors.greenAccent),
+          TextField(keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+              labelText: 'Weight(kg)',
+              labelStyle: TextStyle(color: Colors.greenAccent)
+            ),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.greenAccent, fontSize: 25.0),
+          ),
+          TextField(keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+                labelText: 'Heigth(cm)',
+                labelStyle: TextStyle(color: Colors.greenAccent)
+            ),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.greenAccent, fontSize: 25.0),
+          )
+        ],
+      ),
     );
   }
 }
