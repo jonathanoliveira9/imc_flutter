@@ -23,6 +23,7 @@ class _HomeState extends State<Home> {
     heightController.text = '';
     setState(() {
       _infoText = 'Insert your data!';
+      _formKey = GlobalKey<FormState>();
     });
   }
 
